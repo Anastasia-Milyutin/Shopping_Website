@@ -1,416 +1,204 @@
-body {
-  font-family: "Poppins", sans-serif;
-  color: #000;
-}
-/* header start*/
-.conteiner-header {
-  padding: 36px 100px 46px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.block-logo {
-  display: flex;
-  flex-direction: row;
-  gap: 3px;
-}
-.logo-p {
-  font-size: 40px;
-  font-weight: 900;
-  letter-spacing: 1.2px;
-}
-.menu {
-  line-height: 50%;
-}
-.menu-list {
-  display: flex;
-  flex-direction: row;
-  gap: 65px;
-}
-.link {
-  line-height: normal;
-  list-style: none;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 0.22px;
-}
-.link:hover {
-  background-color: #ebd96b;
-}
-.menu-button {
-  width: 110px;
-  height: 32px;
-  border-radius: 7px;
-  background: #000;
-  color: #fefefe;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.72px;
-  cursor: pointer;
-}
-.menu-button:active {
-  background-color: gray;
-  transform: 0.3s;
-}
-/* header end*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="recet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="mobil.css">
+</head>
+<link rel="icon" href="resources/Vector.ico" type="image/x-icon">
 
-/*welcome section start*/
-.welcome-section {
-  display: flex;
-  width: auto;
-  height: 852px;
-  border-radius: 59px;
-  background: #f4f6f5;
-  margin-bottom: 40px;
-}
-.text {
-  padding: 70px 0 40px 120px;
-}
-h1 {
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 120px;
-}
-.white {
-  background-image: url(resources/Rectangle\ 3.png);
-}
-.gold {
-  background-image: url(resources/Rectangle\ 6.png);
-}
-.welcom-p {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -1.6px;
-  margin-top: 20px;
-}
-.welcom-btn {
-  margin: 20px 0 0 310px;
-  border-radius: 10px;
-  background: #000;
-  width: 150px;
-  height: 50px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -1.5px;
-  cursor: pointer;
-}
-.welcom-btn:active {
-  background-color: gray;
-  transform: 0.3s;
-}
-.girl {
-  margin-top: 60px;
-  width: 851px;
-  height: 784px;
-  background-repeat: no-repeat;
-  object-fit: contain;
-  margin-bottom: 0px;
-}
-/*welcome section end*/
+<body>
+    <div class="conteiner">
+    <div class="conteiner-header">
+        <div class="block-logo">
+            <img src="resources/Vector.svg" alt="логотип сайта одежды" class="logo">
+            <p class="logo-p">FASHION</p>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="link">CATALOGUE</li>
+                <li class="link">FASHION</li>
+                <li class="link">FAVOURITE</li>
+                <li class="link">LIFESTYLE</li>
+                <button class="menu-button">SIGN UP</button>
+            </ul>
+        </div>
+        
+    </div>
 
-/*section mag start*/
-.sektion-mag {
-  height: 160px;
-  border: 20px solid #ebd96b;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: center;
-}
-.mag:hover {
-  cursor: pointer;
-  background-color: #ebd96b;
-}
-/*section mag end*/
+    <div class="welcome-section">
+        <div class="text">
+            <h1><span class="white">LET’S</span>
+                EXPLORE
+                <span class="gold">UNIQUE</span>
+                CLOTHES.</h1>
+                
+                
+                <p class="welcom-p">Live for Influential and Innovative fashion!</p>
+                <button class="welcom-btn">Shop Now</button>
+        </div>
+        <img src="resources/girl.png" alt="фото девушки в розовой шубе" class="girl">
+    </div>
 
-/*section card-menu start*/
-.card-menu {
-  padding: 80px;
-}
-h2 {
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 50px;
-  letter-spacing: 2.88px;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-}
-.Vector {
-  background-image: url(resources/Vector\ 8.png);
-  object-fit: contain;
-  background-repeat: no-repeat;
-}
-.img-card {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
-.block {
-  display: flex;
-  justify-content: space-between;
-}
+    <div class="sektion-mag">
+        <img class="mag" src="resources/HM.svg" alt="">
+        <img class="mag" src="resources/Obey.svg" alt="">
+        <img class="mag" src="resources/Shopify.svg" alt="">
+        <img class="mag" src="resources/Lacoste.svg" alt="">
+        <img class="mag" src="resources/Levis.svg" alt="">
+        <img class="mag" src="resources/Amazon.svg" alt="">
+    </div>
 
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-.images {
-  width: 384px;
-  height: 604px;
-}
-.images:hover {
-  transform: rotateY(180deg);
-}
-.name {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 50px;
-  letter-spacing: -1.28px;
-}
-.link-card {
-  color: #7f7f7f;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 50px;
-  letter-spacing: -0.96px;
-}
-.logo-p:hover {
-  transform: translate(5px, 0);
-  transition: 0.2s;
-}
-/*section card-menu end*/
+    <section class="card-menu">
+        <h2>NEW <span class="Vector">ARRIVALS</span></h2>
+        
+        <div class="img-card">
+            <div class="card">
+                <img src="resources/01.jpg" alt="" class="images" loading="lazy">
+                <div class="block">
+                    <div class="text-p">
+                        <p class="name">Hoodies & Sweetshirt</p>
+                        <p class="link-card">Explore Now!</p>
+                    </div>
+                    <div class="logo-p"><img src="resources/Arrow 1.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/02.jpg" alt="" class="images" loading="lazy">
+                <div class="block">
+                    <div class="text-p">
+                        <p class="name">Coats & Parkas</p>
+                        <p class="link-card">Explore Now!</p>
+                    </div>
+                    <div class="logo-p"><img src="resources/Arrow 1.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/03.jpg" alt="" class="images" loading="lazy">
+                <div class="block">
+                    <div class="text-p">
+                        <p class="name">Tees & T-Shirt</p>
+                        <p class="link-card">Explore Now!</p>
+                    </div>
+                    <div class="logo-p"><img src="resources/Arrow 1.svg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>        
+    </section>
 
-/*section sale start*/
-.sale {
-  width: 0 auto;
-  height: 768px;
-  background: linear-gradient(
-    1deg,
-    #e0c340 0.13%,
-    #dfc23e 3.97%,
-    #e1c441 7.2%,
-    #e3c743 10.13%,
-    #e4c542 12.98%,
-    #e6c744 15.99%,
-    #e7c845 19.52%,
-    #e5c643 23.96%,
-    #e6c945 30.43%,
-    #e3c743 36.49%,
-    #e9ca48 42.49%,
-    #edce49 49.35%,
-    #f0d44c 55.42%,
-    #f4d84f 61.43%,
-    #f6da52 65.74%,
-    #f7db53 72.23%,
-    #f9dd55 77.43%,
-    #f9df56 83.84%,
-    #fae157 91.52%,
-    #f9df56 97.87%
-  );
-  display: flex;
-  margin-bottom: 130px;
-}
-.girl-yellow {
-  width: 700px;
-  height: 0 auto;
-}
-.text-sale {
-  padding: 120px 120px 155px 60px;
-}
-.white {
-  background-repeat: no-repeat;
-}
-.welcom-p {
-  width: 500px;
-}
-.opi {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 52.316px; /* 145.161% */
-  letter-spacing: 0.721px;
-}
-.mag-sale {
-  margin-bottom: 40px;
-}
-.two {
-  margin: 0 auto;
-}
-/*section sale end*/
+    <section class="sale">
+        <img src="resources/image 12.jpg" alt="фото девушки в шортах на желтом фоне" class="girl-yellow" loading="lazy">
 
-/* card-menu two start*/
-.images-two {
-  width: 634px;
-  height: 375px;
-}
-/* card-menu two end*/
+        <div class="text-sale">
+            <h1><span class="white">PAYDAY</span>
+                SALE NOW</h1>
+                <p class="welcom-p">Spend minimal $100 get 30% off
+                    voucher code for your next purchase</p>
+                <p class="opi">1 June - 10 June 2021</p>
+                <p class="mag-sale">*Terms & Conditions apply</p>
+                <button class="welcom-btn two">Shop Now</button>
+        </div>
+   
+    </section>
 
-/* section plays start*/
-.sale-two {
-  background: #fff;
-  padding: 100px 120px 80px 120px;
-  margin: 0 auto;
-  height: 700px;
-}
-.text-plays {
-  display: flex;
-  gap: 30px;
-}
-.block-play {
-  width: 450px;
-}
-.plays-p {
-  width: 419px;
-  color: #7c7c7c;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 35px;
-  letter-spacing: -0.96px;
-}
-.plays {
-  width: 180px;
-  height: 71px;
-}
-.zago {
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 150%;
-  letter-spacing: 2.88px;
-}
-.img-plays {
-  margin-top: -180px;
-  width: 637px;
-  height: 737px;
-}
-/* section plays end*/
+    <section class="card-menu">
+        <h2>Young’s<span class="Vector">Favourite</span></h2>
+        
+        <div class="img-card img-card-two">
+            <div class="card">
+                <img src="resources/01-1.jpg" alt="" class="images images-two" loading="lazy">
+                <div class="block">
+                    <div class="text-p">
+                        <p class="name">Trending on instagram</p>
+                        <p class="link-card">Explore Now!</p>
+                    </div>
+                    <div class="logo-p"><img src="resources/Arrow 1.svg" alt=""></div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="resources/02-1.jpg" alt="" class="images images-two" loading="lazy">
+                <div class="block">
+                    <div class="text-p">
+                        <p class="name">All Under $40</p>
+                        <p class="link-card">Explore Now!</p>
+                    </div>
+                    <div class="logo-p"><img src="resources/Arrow 1.svg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>        
+    </section>
 
-/* section form start*/
-.section-form {
-  padding-top: 150px;
-  text-align: center;
-  height: 423px;
-  flex-shrink: 0;
-  background: #e5c643;
-}
-h3 {
-  color: #fff;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 900;
-  line-height: 70px;
-  letter-spacing: 1.65px;
-  margin-bottom: 30px;
-}
-.form-p {
-  color: #fffcf8;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 35px;
-  letter-spacing: 0.96px;
-  margin-bottom: 40px;
-}
-.form {
-  position: relative;
-  width: 274px;
-  height: 47px;
-  border-radius: 10px;
-}
-.form-btn {
-  position: absolute;
-  margin-left: -97px;
-  margin-top: 4px;
-  color: #fff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 35px;
-  letter-spacing: 0.99px;
-  text-transform: capitalize;
-  width: 90px;
-  height: 43px;
-  border-radius: 8px;
-  background: #000;
-}
-.form-btn:active {
-  background-color: #7c7c7c;
-  color: #000;
-  transition: 0.3s;
-}
-/* section form end*/
+    <section class="sale sale-two">
+        <div class="text-sale text-plays">
+            <div class="block-play">
+                <h1 class="zago">DOWNLOAD APP &
+                    GET THE VOUCHER!<h1>
+                    <p class="welcom-p plays-p">Get 30% off for first transaction using
+                        Rondovision mobile app for now.</p>
+                        <div class="block-plays">
+                            <img src="resources/app-store.png" alt="" class="plays">
+                            <img src="resources/google-play.png" alt="" class="plays">
+                        </div>
+            </div>
 
-/* footer start*/
-footer {
-  height: 445px;
-  background: #000;
-  padding: 125px 100px 0px 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.fashion {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 400px;
-}
-.fathion-h {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.2px;
-}
-.fashion-p {
-  color: #8e8e8e;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.4px;
-}
-.fathion-link {
-  display: flex;
-  gap: 14px;
-}
-.menu-link {
-  display: flex;
-  gap: 50px;
-}
-.colomn {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-h4 {
-  color: #d9d9d9;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.4px;
-}
-.link-menu-footer {
-  color: #8e8e8e;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.4px;
-  text-decoration: none;
-}
-.link-menu-footer:hover {
-  color: blue;
-}
-/* footer end*/
+        <img src="resources/vouchers-img.png" alt="картинка открытого приложеня в телефоне" class="girl-yellow img-plays" loading="lazy">
 
-@media (max-width: 1461px) {
-  .girl {
-    width: 751px;}
-}
-@media (max-width: 1409px) {
-  .conteiner {
-    width: 1417px;}
-}
+        
+        </div>
+    </section>
 
+    <section class="section-form">
+        <h3>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h3>
+        <p class="form-p">Type your email down below and be young wild generation</p>
+        <form action="btn-mail">
+            <input type="text" inputmode="email" placeholder="Add your email here" class="form" required>
+             <button class="form-btn">SEND</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="fashion">
+            <h3 class="fathion-h">FASHION</h3>
+            <p class="fashion-p">Complete your style with awesome clothes from us.</p>
+            <ul class="fathion-link">
+                <li><a href="" class="link-sourch"><img src="resources/fb.svg" alt="" class="sourch"></a></li>
+                <li><a href="" class="link-sourch"><img src="resources/inst.svg" alt="" class="sourch"></a></li>
+                <li><a href="" class="link-sourch"><img src="resources/tw.svg" alt="" class="sourch"></a></li>
+                <li><a href="" class="link-sourch"><img src="resources/in.svg" alt="" class="sourch"></a></li>
+            </ul>
+        </section>
+        <section class="menu-link">
+            <div class="colomn">
+                <h4>Company</h4>
+            <a href="" class="link-menu-footer">About</a>
+            <a href="" class="link-menu-footer">Contact us</a>
+            <a href="" class="link-menu-footer">Support</a>
+            <a href="" class="link-menu-footer">Careers</a>
+            </div>
+            <div class="colomn">
+                <h4>Quick Link</h4>
+            <a href="" class="link-menu-footer">Share Location</a>
+            <a href="" class="link-menu-footer">Orders Tracking</a>
+            <a href="" class="link-menu-footer">Size Guide</a>
+            <a href="" class="link-menu-footer">FAQs</a>
+            </div>
+            <div class="colomn">
+                <h4>Legal</h4>
+            <a href="" class="link-menu-footer">Terms & conditions</a>
+            <a href="" class="link-menu-footer">Privacy Policy</a>
+            </div>
+            
+        </section>
+    </footer>
+</div>
+</body>
+</html>
